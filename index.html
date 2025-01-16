@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div id="calci">
+        <div id="Title"><p>CALCULATOR</p></div>
+        <div id="displayDiv"><input type="text" name="display" id="display"></div>
+        <div id="buttonDiv">
+            <div id="row1"><button id="btn1" onclick="appendToDisplay('1')">1</button><button id="btn2" onclick="appendToDisplay('2')">2</button><button id="btn3" onclick="appendToDisplay('3')">3</button><button id="btn4" onclick="appendToDisplay('4')">4</button></div>
+            <div id="row2"><button id="btn5" onclick="appendToDisplay('5')">5</button><button id="btn6" onclick="appendToDisplay('6')">6</button><button id="btn7" onclick="appendToDisplay('7')">7</button><button id="btn8" onclick="appendToDisplay('8')">8</button></div>
+            <div id="row3"><button id="btn9" onclick="appendToDisplay('9')">9</button><button id="btn0" onclick="appendToDisplay('0')">0</button><button id="btnadd"onclick="appendToDisplay('+')" >+</button><button id="btnmin" onclick="appendToDisplay('-')">-</button></div>
+            <div id="row4"><button id="btnmul" onclick="appendToDisplay('*')">*</button><button id="btndivide" onclick="appendToDisplay('/')">/</button><button id="btnBack" onclick="Back()" >Back</button><button id="Del" onclick="clearDisplay()">Del</button></div>
+            <div id="equalsDiv"><button id="btnequals" onclick="calculate()">=</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
